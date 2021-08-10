@@ -1,0 +1,604 @@
+<link rel="stylesheet" href="static/overview.css">
+<!doctype html>
+<head>
+<title>Overview</title>
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/style.css">
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.0.min.js"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.3.0.min.js"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.3.0.min.js"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="main">
+        <div class="menu">
+            <div>
+Overview
+</div>
+            <div><a href="overview.html">Overview</a></div>
+            <div><a href="features.html">Features</a></div>
+            <div><a href="models.html">Models</a></div>
+        </div>
+        <div class="content">
+            
+
+<div class="describe-tables">
+    <div class="describe">
+        <div class="section-title">Numeric</div>
+        <div><table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>count</th>
+<th>mean</th>
+<th>std</th>
+<th>min</th>
+<th>25%</th>
+<th>50%</th>
+<th>75%</th>
+<th>max</th>
+<th>missing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><p class="elem-w-desc">DIR<span>Description not Available</span></p></th>
+<td>20303.00</td>
+<td>18.56</td>
+<td>14.23</td>
+<td>0.00</td>
+<td>5.00</td>
+<td>20.00</td>
+<td>30.00</td>
+<td>99.00</td>
+<td>0.01</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">gastos<span>Description not Available</span></p></th>
+<td>3594.00</td>
+<td>8352.68</td>
+<td>23890.04</td>
+<td>0.00</td>
+<td>1090.50</td>
+<td>2308.00</td>
+<td>6845.00</td>
+<td>564585.00</td>
+<td>0.83</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">id<span>Description not Available</span></p></th>
+<td>20545.00</td>
+<td>2006177805.04</td>
+<td>3936509.78</td>
+<td>2001150021.00</td>
+<td>2003151107.00</td>
+<td>2005320549.00</td>
+<td>2009320830.00</td>
+<td>2015360819.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">lat<span>Description not Available</span></p></th>
+<td>20543.00</td>
+<td>42.55</td>
+<td>0.52</td>
+<td>27.62</td>
+<td>42.20</td>
+<td>42.46</td>
+<td>42.91</td>
+<td>78.64</td>
+<td>0.00</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">lng<span>Description not Available</span></p></th>
+<td>20543.00</td>
+<td>-7.98</td>
+<td>0.69</td>
+<td>-9.29</td>
+<td>-8.42</td>
+<td>-7.98</td>
+<td>-7.54</td>
+<td>46.52</td>
+<td>0.00</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">medios<span>Description not Available</span></p></th>
+<td>20545.00</td>
+<td>3.28</td>
+<td>4.73</td>
+<td>0.00</td>
+<td>1.00</td>
+<td>2.00</td>
+<td>4.00</td>
+<td>205.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">personal<span>Description not Available</span></p></th>
+<td>20545.00</td>
+<td>18.94</td>
+<td>24.28</td>
+<td>0.00</td>
+<td>7.00</td>
+<td>13.00</td>
+<td>22.00</td>
+<td>855.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">PRECIPITACION<span>Description not Available</span></p></th>
+<td>20303.00</td>
+<td>0.65</td>
+<td>4.12</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>79.70</td>
+<td>0.01</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">PRESMAX<span>Description not Available</span></p></th>
+<td>20303.00</td>
+<td>1000.85</td>
+<td>40.32</td>
+<td>0.00</td>
+<td>1000.20</td>
+<td>1005.40</td>
+<td>1010.60</td>
+<td>1031.20</td>
+<td>0.01</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">PRESMIN<span>Description not Available</span></p></th>
+<td>20303.00</td>
+<td>996.83</td>
+<td>40.22</td>
+<td>0.00</td>
+<td>995.40</td>
+<td>1001.30</td>
+<td>1007.10</td>
+<td>1027.80</td>
+<td>0.01</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">RACHA<span>Description not Available</span></p></th>
+<td>20303.00</td>
+<td>8.41</td>
+<td>3.69</td>
+<td>0.00</td>
+<td>6.10</td>
+<td>8.10</td>
+<td>10.80</td>
+<td>31.90</td>
+<td>0.01</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">SOL<span>Description not Available</span></p></th>
+<td>20303.00</td>
+<td>8.55</td>
+<td>3.67</td>
+<td>0.00</td>
+<td>6.40</td>
+<td>9.40</td>
+<td>11.40</td>
+<td>14.80</td>
+<td>0.01</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">superficie<span>Description not Available</span></p></th>
+<td>20545.00</td>
+<td>15.48</td>
+<td>100.80</td>
+<td>1.00</td>
+<td>1.50</td>
+<td>2.50</td>
+<td>6.00</td>
+<td>7316.77</td>
+<td>0.00</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">time_ctrl<span>Description not Available</span></p></th>
+<td>20545.00</td>
+<td>230.10</td>
+<td>373.40</td>
+<td>0.00</td>
+<td>90.00</td>
+<td>135.00</td>
+<td>230.00</td>
+<td>10125.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">time_ext<span>Description not Available</span></p></th>
+<td>20545.00</td>
+<td>384.58</td>
+<td>623.52</td>
+<td>15.00</td>
+<td>143.00</td>
+<td>225.00</td>
+<td>380.00</td>
+<td>12637.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">TMAX<span>Description not Available</span></p></th>
+<td>20303.00</td>
+<td>24.01</td>
+<td>7.10</td>
+<td>0.00</td>
+<td>19.00</td>
+<td>24.00</td>
+<td>28.90</td>
+<td>42.00</td>
+<td>0.01</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">TMEDIA<span>Description not Available</span></p></th>
+<td>20303.00</td>
+<td>17.02</td>
+<td>6.06</td>
+<td>-2.40</td>
+<td>12.70</td>
+<td>18.00</td>
+<td>21.50</td>
+<td>31.20</td>
+<td>0.01</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">TMIN<span>Description not Available</span></p></th>
+<td>20303.00</td>
+<td>10.03</td>
+<td>6.36</td>
+<td>-10.00</td>
+<td>5.50</td>
+<td>11.20</td>
+<td>15.20</td>
+<td>23.40</td>
+<td>0.01</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">VELMEDIA<span>Description not Available</span></p></th>
+<td>20303.00</td>
+<td>2.32</td>
+<td>1.67</td>
+<td>0.00</td>
+<td>1.40</td>
+<td>1.90</td>
+<td>2.80</td>
+<td>10.80</td>
+<td>0.01</td>
+</tr>
+</tbody>
+</table></div>
+    </div>
+    <div class="describe">
+        <div class="section-title">Categorical</div>
+        <div><table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>count</th>
+<th>mean</th>
+<th>std</th>
+<th>min</th>
+<th>25%</th>
+<th>50%</th>
+<th>75%</th>
+<th>max</th>
+<th>missing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><p class="elem-w-desc">ALTITUD<span>Description not Available<br/><br/>Category - Original<br/>1 - 108.0<br/>2 - 143.0<br/>3 - 445.0<br/>4 - 58.0</span></p></th>
+<td>20303.00</td>
+<td>2.49</td>
+<td>1.04</td>
+<td>1.00</td>
+<td>2.00</td>
+<td>2.00</td>
+<td>4.00</td>
+<td>4.00</td>
+<td>0.01</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">Concat<span>Description not Available<br/><br/>Category - Original<br/>1 - 36936 27<br/>2 - 36939 27<br/>3 - 36939 32<br/>4 - 36940 32<br/>5 - 36941 27<br/>6 - 36941 32<br/>7 - 36941 36<br/>8 - 36942 15<br/>9 - 36942 32<br/>10 - 36942 36<br/>(...) Showing only first 10 categories</span></p></th>
+<td>20545.00</td>
+<td>2466.85</td>
+<td>1582.26</td>
+<td>1.00</td>
+<td>1078.00</td>
+<td>2196.00</td>
+<td>3751.00</td>
+<td>5769.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">fecha<span>Description not Available<br/><br/>Category - Original<br/>1 - 01/01/2015<br/>2 - 01/02/2002<br/>3 - 01/02/2005<br/>4 - 01/02/2006<br/>5 - 01/03/2004<br/>6 - 01/03/2005<br/>7 - 01/03/2009<br/>8 - 01/03/2011<br/>9 - 01/03/2012<br/>10 - 01/04/2002<br/>(...) Showing only first 10 categories</span></p></th>
+<td>20545.00</td>
+<td>1310.52</td>
+<td>708.63</td>
+<td>1.00</td>
+<td>732.00</td>
+<td>1338.00</td>
+<td>1888.00</td>
+<td>2593.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">heridos<span>Description not Available<br/><br/>Category - Original<br/>1 - 1.0<br/>2 - 2.0<br/>3 - 3.0<br/>4 - 4.0<br/>5 - 6.0</span></p></th>
+<td>40.00</td>
+<td>1.43</td>
+<td>0.87</td>
+<td>1.00</td>
+<td>1.00</td>
+<td>1.00</td>
+<td>2.00</td>
+<td>5.00</td>
+<td>1.00</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">muertos<span>Description not Available<br/><br/>Category - Original<br/>1 - 1.0<br/>2 - 2.0</span></p></th>
+<td>7.00</td>
+<td>1.14</td>
+<td>0.38</td>
+<td>1.00</td>
+<td>1.00</td>
+<td>1.00</td>
+<td>1.00</td>
+<td>2.00</td>
+<td>1.00</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">None<span>Description not Available<br/><br/>Category - Original<br/>1 - 1<br/>2 - 2<br/>3 - 3<br/>4 - 4<br/>5 - 5<br/>6 - 6</span></p></th>
+<td>20545.00</td>
+<td>4.00</td>
+<td>0.61</td>
+<td>1.00</td>
+<td>4.00</td>
+<td>4.00</td>
+<td>4.00</td>
+<td>6.00</td>
+<td>0.00</td>
+</tr>
+</tbody>
+</table></div>
+    </div>
+    <div class="describe-unused">
+        <div class="section-title">Unused Columns</div>
+        <div><ul></ul></div>
+    </div>
+</div>
+<div class="head">
+    <div class="section-title">First 5 rows of data (transposed)</div>
+    <div><table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><p class="elem-w-desc">ALTITUD<span>Description not Available<br/><br/>Category - Original<br/>1 - 108.0<br/>2 - 143.0<br/>3 - 445.0<br/>4 - 58.0</span></p></th>
+<td>58.00</td>
+<td>58.00</td>
+<td>58.00</td>
+<td>58.00</td>
+<td>58.00</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">Concat<span>Description not Available<br/><br/>Category - Original<br/>1 - 36936 27<br/>2 - 36939 27<br/>3 - 36939 32<br/>4 - 36940 32<br/>5 - 36941 27<br/>6 - 36941 32<br/>7 - 36941 36<br/>8 - 36942 15<br/>9 - 36942 32<br/>10 - 36942 36<br/>(...) Showing only first 10 categories</span></p></th>
+<td>36942 15</td>
+<td>36946 15</td>
+<td>36947 15</td>
+<td>36947 15</td>
+<td>36994 15</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">DIR<span>Description not Available</span></p></th>
+<td>11.00</td>
+<td>34.00</td>
+<td>4.00</td>
+<td>4.00</td>
+<td>5.00</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">fecha<span>Description not Available<br/><br/>Category - Original<br/>1 - 01/01/2015<br/>2 - 01/02/2002<br/>3 - 01/02/2005<br/>4 - 01/02/2006<br/>5 - 01/03/2004<br/>6 - 01/03/2005<br/>7 - 01/03/2009<br/>8 - 01/03/2011<br/>9 - 01/03/2012<br/>10 - 01/04/2002<br/>(...) Showing only first 10 categories</span></p></th>
+<td>20/02/2001</td>
+<td>24/02/2001</td>
+<td>25/02/2001</td>
+<td>25/02/2001</td>
+<td>13/04/2001</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">gastos<span>Description not Available</span></p></th>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">heridos<span>Description not Available<br/><br/>Category - Original<br/>1 - 1.0<br/>2 - 2.0<br/>3 - 3.0<br/>4 - 4.0<br/>5 - 6.0</span></p></th>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">id<span>Description not Available</span></p></th>
+<td>2001150021</td>
+<td>2001150088</td>
+<td>2001150094</td>
+<td>2001150111</td>
+<td>2001150145</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">lat<span>Description not Available</span></p></th>
+<td>43.70</td>
+<td>42.94</td>
+<td>43.19</td>
+<td>42.92</td>
+<td>43.70</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">lng<span>Description not Available</span></p></th>
+<td>-8.04</td>
+<td>-9.11</td>
+<td>-8.69</td>
+<td>-9.08</td>
+<td>-7.98</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">medios<span>Description not Available</span></p></th>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">muertos<span>Description not Available<br/><br/>Category - Original<br/>1 - 1.0<br/>2 - 2.0</span></p></th>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">None<span>Description not Available<br/><br/>Category - Original<br/>1 - 1<br/>2 - 2<br/>3 - 3<br/>4 - 4<br/>5 - 5<br/>6 - 6</span></p></th>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">personal<span>Description not Available</span></p></th>
+<td>14</td>
+<td>14</td>
+<td>5</td>
+<td>14</td>
+<td>9</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">PRECIPITACION<span>Description not Available</span></p></th>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">PRESMAX<span>Description not Available</span></p></th>
+<td>1025.40</td>
+<td>1006.60</td>
+<td>1011.30</td>
+<td>1011.30</td>
+<td>1018.60</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">PRESMIN<span>Description not Available</span></p></th>
+<td>1021.00</td>
+<td>1003.90</td>
+<td>1006.60</td>
+<td>1006.60</td>
+<td>1015.40</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">RACHA<span>Description not Available</span></p></th>
+<td>16.90</td>
+<td>11.40</td>
+<td>11.10</td>
+<td>11.10</td>
+<td>13.90</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">SOL<span>Description not Available</span></p></th>
+<td>10.20</td>
+<td>9.40</td>
+<td>10.20</td>
+<td>10.20</td>
+<td>12.10</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">superficie<span>Description not Available</span></p></th>
+<td>5.00</td>
+<td>1.50</td>
+<td>1.50</td>
+<td>3.80</td>
+<td>1.50</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">time_ctrl<span>Description not Available</span></p></th>
+<td>235</td>
+<td>470</td>
+<td>125</td>
+<td>1050</td>
+<td>110</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">time_ext<span>Description not Available</span></p></th>
+<td>270</td>
+<td>530</td>
+<td>135</td>
+<td>1051</td>
+<td>155</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">TMAX<span>Description not Available</span></p></th>
+<td>15.60</td>
+<td>14.00</td>
+<td>11.60</td>
+<td>11.60</td>
+<td>17.40</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">TMEDIA<span>Description not Available</span></p></th>
+<td>11.30</td>
+<td>11.70</td>
+<td>9.00</td>
+<td>9.00</td>
+<td>13.90</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">TMIN<span>Description not Available</span></p></th>
+<td>7.00</td>
+<td>9.40</td>
+<td>6.50</td>
+<td>6.50</td>
+<td>10.40</td>
+</tr>
+<tr>
+<th><p class="elem-w-desc">VELMEDIA<span>Description not Available</span></p></th>
+<td>3.60</td>
+<td>4.20</td>
+<td>5.00</td>
+<td>5.00</td>
+<td>5.30</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="pairplot">
+    <div class="section-title">Pairplot of Features</div>
+    <div class="pairplot-img"><div>Plot was turned off because of too many features present in the data. Reduce the number of features or call 'create_dashboard' with 'force_pairplot=True' argument.</div></div>
+</div>
+
+
+        </div>
+        <div class="footer">
+            Created on 09-Aug-2021 21:09:46
+        </div>
+    </div>
+</body>
