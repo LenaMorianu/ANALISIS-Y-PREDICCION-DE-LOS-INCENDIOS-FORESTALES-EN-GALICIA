@@ -1,6 +1,6 @@
 
 
-Análisis de incendios en Galicia - periodo 2001 - 2005
+Análisis de incendios en Galicia de 2001 a 2015
 
 1. [El dataset de análisis](https://lenamorianu.github.io/TFM/overview.html)
 2. [EDA](https://lenamorianu.github.io/TFM/features.html)
