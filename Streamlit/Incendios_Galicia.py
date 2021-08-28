@@ -32,9 +32,8 @@ inicio = st.sidebar.button("INICIO")
   #      st.write(data)
          
 
-
-st.sidebar.subheader('Índice')
-             
+indice = st.sidebar.button('Indice')
+            
   
          
 st.sidebar.subheader("REALIZAR PREDICCIÓN")
@@ -52,6 +51,7 @@ st.sidebar.write('Introduce valores para las siguientes variables:')
 st.write('')
 
 
+# al pulsar el boton inicio
 if inicio:
   DATA_URL = 'https://raw.githubusercontent.com/LenaMorianu/TFM/main/Galicia_definitivo.csv'
 
@@ -95,6 +95,7 @@ if inicio:
           st.write(data)
     
     
+if indice:
   x = data['superficie']
   y = data['fecha']
   p = figure(
