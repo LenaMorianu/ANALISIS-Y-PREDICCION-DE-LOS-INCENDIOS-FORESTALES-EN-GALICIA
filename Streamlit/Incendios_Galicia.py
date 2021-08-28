@@ -42,10 +42,11 @@ st.sidebar.write('Introduce valores para las siguientes variables:')
 # st.image(image, caption='source: https://pixabay.com/photos/mario-luigi-yoschi-figures-funny-1557240/',
            # use_column_width=True)       
          
-         
-# DATA_URL = 'https://raw.githubusercontent.com/LenaMorianu/TFM/main/Galicia_definitivo.csv'
+st.write('')
 
-# DATE_COLUMN = 'fecha'
+DATA_URL = 'https://raw.githubusercontent.com/LenaMorianu/TFM/main/Galicia_definitivo.csv'
+
+DATE_COLUMN = 'fecha'
 
 @st.cache
 def load_data(nrows):
