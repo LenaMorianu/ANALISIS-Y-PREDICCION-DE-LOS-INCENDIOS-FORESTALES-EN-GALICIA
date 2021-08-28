@@ -26,12 +26,6 @@ st.write('El presente proyecto tiene como objetivo el análisis de los incendios
          
 inicio = st.sidebar.button("INICIO")
 
-#st.subheader('Datos de incendios en Galicia')
-#with st.container():
- #   if st.checkbox('Muestra los datos'):
-  #      st.write(data)
-         
-
 indice = st.sidebar.button('Indice')
             
   
@@ -47,6 +41,12 @@ st.sidebar.write('Introduce valores para las siguientes variables:')
 # st.image(image, caption='source: https://pixabay.com/photos/mario-luigi-yoschi-figures-funny-1557240/',
            # use_column_width=True)       
    
+
+#st.subheader('Datos de incendios en Galicia')
+#with st.container():
+ #   if st.checkbox('Muestra los datos'):
+  #      st.write(data)    
+    
     
 st.write('')
 
@@ -120,21 +120,21 @@ if inicio:
  # Al pulsar el boton indice
 if indice: 
   introduccion = st.sidebar.botton('Introducción')
-  analisis_inicial = st.sidebar.botton('Análisis inicial')
-  EDA = st.sidebar.botton('EDA')
-  Modelos_summary = st.sidebar.botton('Modelos summary')
+  analisis = st.sidebar.botton('Análisis inicial')
+  eda = st.sidebar.botton('EDA')
+  modelos = st.sidebar.botton('Modelos summary')
   
   
 if introduccion:
   st.write('ESTA ES LA PÁGINA CON LA INTRODUCCIÓN')
   
-if analisis_inicial:
+if analisis:
   st.write('ESTA ES LA PÁGINA CON EL ANÁLISIS INICIAL')
     
-if EDA:
+if eda:
   st.write('ESTA ES LA PÁGINA CON LA EDA')
     
-if Modelos_summary:
+if modelos:
   st.write('ESTA ES LA PÁGINA CON LA EL RESUMEN DE LOS MODELOS')
 
   
