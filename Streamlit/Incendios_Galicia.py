@@ -30,20 +30,23 @@ st.sidebar.subheader("INICIO")
 st.sidebar.subheader("Índice")
              
          
-st.sidebar.subheader("Realizar PREDICCIÓN")
-st.write('Introduce valores para las siguientes variables:')
+st.sidebar.subheader("REALIZAR PREDICCIÓN")
 
+st.sidebar.write('Introduce valores para las siguientes variables:')
 
-                  
+              
          
-         
-         
+####### IMAGEN
+#image = Image.open('mario-1557240_640.jpg')
+
+# st.image(image, caption='source: https://pixabay.com/photos/mario-luigi-yoschi-figures-funny-1557240/',
+           use_column_width=True)       
          
          
 #DATA_URL = 'https://raw.githubusercontent.com/LenaMorianu/TFM/main/Galicia_definitivo.csv'
 
 # DATE_COLUMN = 'fecha'
-'''
+
 @st.cache
 def load_data(nrows):
     data = pd.read_csv(DATA_URL, nrows=nrows)
@@ -101,6 +104,6 @@ st.map(df2)
 
 st.write(st.session_state)
 
-# st.write(st.session_state['value']) - ERROR'''
+# st.write(st.session_state['value']) - ERROR
          
        
