@@ -22,16 +22,13 @@ st.write('El presente proyecto tiene como objetivo el análisis de los incendios
          
          
          
-datos_galicia = pd.read.csv('https://raw.githubusercontent.com/LenaMorianu/TFM/main/Galicia_definitivo.csv')
+#datos_galicia = pd.read.csv('https://raw.githubusercontent.com/LenaMorianu/TFM/main/Galicia_definitivo.csv')
          
 st.sidebar.subheader("INICIO")
          
          
-         
 st.sidebar.subheader("Índice")
-        
-         
-         
+             
          
 st.sidebar.subheader("Realizar PREDICCIÓN")
 st.write('Introduce valores para las siguientes variables:')
@@ -43,7 +40,7 @@ st.write('Introduce valores para las siguientes variables:')
          
          
          
-DATA_URL = 'https://raw.githubusercontent.com/LenaMorianu/TFM/main/Galicia_definitivo.csv'
+#DATA_URL = 'https://raw.githubusercontent.com/LenaMorianu/TFM/main/Galicia_definitivo.csv'
 
 # DATE_COLUMN = 'fecha'
 '''
