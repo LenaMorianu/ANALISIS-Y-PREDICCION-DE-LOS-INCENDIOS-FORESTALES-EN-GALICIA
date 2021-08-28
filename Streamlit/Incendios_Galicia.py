@@ -51,7 +51,7 @@ st.sidebar.write('Introduce valores para las siguientes variables:')
 st.write('')
 
 
-# al pulsar el boton inicio
+# Al pulsar el boton inicio
 if inicio:
   DATA_URL = 'https://raw.githubusercontent.com/LenaMorianu/TFM/main/Galicia_definitivo.csv'
 
@@ -74,10 +74,10 @@ if inicio:
       data.columns.values
       )
 
-#st.subheader('Datos de incendios en Galicia')
-#with st.container():
- #   if st.checkbox('Muestra los datos'):
-  #      st.write(data)
+  st.subheader('Datos de incendios en Galicia')
+  with st.container():
+    if st.checkbox('Muestra los datos'):
+       st.write(data)
     
 #st.dataframe(data.style.highlight_max(axis=0))
 
@@ -94,7 +94,8 @@ if inicio:
       if st.checkbox('Muestra los datos'):
           st.write(data)
     
-    
+   
+# Al pulsar el boton indice
 if indice:
   x = data['superficie']
   y = data['fecha']
