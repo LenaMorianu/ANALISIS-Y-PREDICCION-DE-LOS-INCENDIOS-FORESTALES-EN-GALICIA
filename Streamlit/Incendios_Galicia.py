@@ -59,7 +59,6 @@ def load_data(nrows):
 
 data_load_state = st.text('Loading data...')
 data = load_data(100)
-data_load_state.text("Done! (using st.cache)")
 
 add_selectbox = st.sidebar.selectbox(
     'Elige la variable que quieres ver:',
