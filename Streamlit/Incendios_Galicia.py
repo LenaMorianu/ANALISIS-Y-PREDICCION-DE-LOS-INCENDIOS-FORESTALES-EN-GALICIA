@@ -25,13 +25,18 @@ st.write('El presente proyecto tiene como objetivo el análisis de los incendios
 # datos_galicia = pd.read.csv('https://raw.githubusercontent.com/LenaMorianu/TFM/main/Galicia_definitivo.csv')
          
 st.sidebar.subheader("INICIO")
+
+#st.subheader('Datos de incendios en Galicia')
+#with st.container():
+ #   if st.checkbox('Muestra los datos'):
+  #      st.write(data)
          
-         
+    
 st.sidebar.subheader("Índice")
              
+  
          
 st.sidebar.subheader("REALIZAR PREDICCIÓN")
-
 st.sidebar.write('Introduce valores para las siguientes variables:')
 
               
@@ -41,7 +46,8 @@ st.sidebar.write('Introduce valores para las siguientes variables:')
 
 # st.image(image, caption='source: https://pixabay.com/photos/mario-luigi-yoschi-figures-funny-1557240/',
            # use_column_width=True)       
-         
+   
+    
 st.write('')
 
 DATA_URL = 'https://raw.githubusercontent.com/LenaMorianu/TFM/main/Galicia_definitivo.csv'
