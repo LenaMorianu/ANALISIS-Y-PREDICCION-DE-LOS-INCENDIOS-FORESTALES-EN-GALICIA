@@ -22,7 +22,7 @@ st.write('El presente proyecto tiene como objetivo el análisis de los incendios
          
          
          
-#datos_galicia = pd.read.csv('https://raw.githubusercontent.com/LenaMorianu/TFM/main/Galicia_definitivo.csv')
+# datos_galicia = pd.read.csv('https://raw.githubusercontent.com/LenaMorianu/TFM/main/Galicia_definitivo.csv')
          
 st.sidebar.subheader("INICIO")
          
@@ -37,13 +37,13 @@ st.sidebar.write('Introduce valores para las siguientes variables:')
               
          
 ####### IMAGEN
-#image = Image.open('mario-1557240_640.jpg')
+# image = Image.open('mario-1557240_640.jpg')
 
 # st.image(image, caption='source: https://pixabay.com/photos/mario-luigi-yoschi-figures-funny-1557240/',
-           use_column_width=True)       
+           # use_column_width=True)       
          
          
-#DATA_URL = 'https://raw.githubusercontent.com/LenaMorianu/TFM/main/Galicia_definitivo.csv'
+# DATA_URL = 'https://raw.githubusercontent.com/LenaMorianu/TFM/main/Galicia_definitivo.csv'
 
 # DATE_COLUMN = 'fecha'
 
