@@ -24,14 +24,17 @@ st.write('El presente proyecto tiene como objetivo el análisis de los incendios
          
 # datos_galicia = pd.read.csv('https://raw.githubusercontent.com/LenaMorianu/TFM/main/Galicia_definitivo.csv')
          
-st.sidebar.subheader("INICIO")
+inicio = st.sidebar.button("INICIO")
 
 #st.subheader('Datos de incendios en Galicia')
 #with st.container():
  #   if st.checkbox('Muestra los datos'):
   #      st.write(data)
          
-    
+if inicio:
+  
+
+
 st.sidebar.subheader("Índice")
              
   
@@ -50,26 +53,28 @@ st.sidebar.write('Introduce valores para las siguientes variables:')
     
 st.write('')
 
-DATA_URL = 'https://raw.githubusercontent.com/LenaMorianu/TFM/main/Galicia_definitivo.csv'
 
-DATE_COLUMN = 'fecha'
+if inicio:
+  DATA_URL = 'https://raw.githubusercontent.com/LenaMorianu/TFM/main/Galicia_definitivo.csv'
 
-@st.cache
-def load_data(nrows):
-    data = pd.read_csv(DATA_URL, nrows=nrows)
-    lowercase = lambda x: str(x).lower()
-    data.rename(lowercase, axis='columns', inplace=True)
-    data[DATE_COLUMN] = pd.to_datetime(data[DATE_COLUMN])
-    return data
+  DATE_COLUMN = 'fecha'
+
+  @st.cache
+  def load_data(nrows):
+      data = pd.read_csv(DATA_URL, nrows=nrows)
+      lowercase = lambda x: str(x).lower()
+      data.rename(lowercase, axis='columns', inplace=True)
+      data[DATE_COLUMN] = pd.to_datetime(data[DATE_COLUMN])
+      return data
 
 
-data_load_state = st.text('Loading data...')
-data = load_data(100)
+  data_load_state = st.text('Loading data...')
+  data = load_data(100)
 
-add_selectbox = st.sidebar.selectbox(
-    'Elige la variable que quieres ver:',
-    data.columns.values
-    )
+  add_selectbox = st.sidebar.selectbox(
+      'Elige la variable que quieres ver:',
+      data.columns.values
+      )
 
 #st.subheader('Datos de incendios en Galicia')
 #with st.container():
@@ -78,37 +83,37 @@ add_selectbox = st.sidebar.selectbox(
     
 #st.dataframe(data.style.highlight_max(axis=0))
 
-left_column, right_column = st.columns(2)
+  left_column, right_column = st.columns(2)
 
 
-with left_column:
-    df2 = data['superficie'].copy()
-    st._arrow_line_chart(df2)
+  with left_column:
+      df2 = data['superficie'].copy()
+      st._arrow_line_chart(df2)
 
 
-with right_column:    
-    st.subheader('Datos de incendios en Galicia')
-    if st.checkbox('Muestra los datos'):
-        st.write(data)
+  with right_column:    
+      st.subheader('Datos de incendios en Galicia')
+      if st.checkbox('Muestra los datos'):
+          st.write(data)
     
     
-x = data['superficie']
-y = data['fecha']
-p = figure(
-    title='Evoluciòn superficie quemada',
-    x_axis_label='Superficie quemada',
-    y_axis_label='Fecha')
+  x = data['superficie']
+  y = data['fecha']
+  p = figure(
+      title='Evoluciòn superficie quemada',
+      x_axis_label='Superficie quemada',
+      y_axis_label='Fecha')
 
-p.line(x, y, legend_label='Evolución', line_width=2)
-st.bokeh_chart(p, use_container_width=True)
+  p.line(x, y, legend_label='Evolución', line_width=2)
+  st.bokeh_chart(p, use_container_width=True)
 
-df2 = data.copy()
-df2.rename(columns={'lng':'lon'}, inplace=True)
+  df2 = data.copy()
+  df2.rename(columns={'lng':'lon'}, inplace=True)
 
-st.map(df2)
+  st.map(df2)
 
 
-st.write(st.session_state)
+  st.write(st.session_state)
 
 # st.write(st.session_state['value']) - ERROR
          
