@@ -15,12 +15,38 @@ st.set_page_config(
     initial_sidebar_state="expanded")
 
 
-st.title('Análisis de los incendios en Galicia - años 2001 - 2015')
+st.title('Análisis y predicción de incendios en Galicia)
+         
+st.write('El presente proyecto tiene como objetivo el análisis de los incendios producidos en Galicia durante el periodo 2001 - 2015,  '+
+         ' así como realizar predicción en cuanto a la causa de los incendios con las características (datos) que deseea consultar.')
+         
+         
+         
+datos_galicia = pd.read.csv('https://raw.githubusercontent.com/LenaMorianu/TFM/main/Galicia_definitivo.csv')
+         
+st.sidebar.subheader("INICIO")
+         
+         
+         
+st.sidebar.subheader("Índice")
+        
+         
+         
+         
+st.sidebar.subheader("Realizar PREDICCIÓN")
+st.write('Introduce valores para las siguientes variables:')
 
+
+                  
+         
+         
+         
+         
+         
 DATA_URL = 'https://raw.githubusercontent.com/LenaMorianu/TFM/main/Galicia_definitivo.csv'
 
-DATE_COLUMN = 'fecha'
-
+# DATE_COLUMN = 'fecha'
+'''
 @st.cache
 def load_data(nrows):
     data = pd.read_csv(DATA_URL, nrows=nrows)
@@ -78,4 +104,6 @@ st.map(df2)
 
 st.write(st.session_state)
 
-# st.write(st.session_state['value']) - ERROR
+# st.write(st.session_state['value']) - ERROR'''
+         
+       
