@@ -125,16 +125,16 @@ if indice:
   Modelos_summary = st.sidebar.botton('Modelos summary')
   
   
-  if introduccion:
-    st.write('ESTA ES LA PÁGINA CON LA INTRODUCCIÓN')
+if introduccion:
+  st.write('ESTA ES LA PÁGINA CON LA INTRODUCCIÓN')
   
-  if analisis_inicial:
-    st.write('ESTA ES LA PÁGINA CON EL ANÁLISIS INICIAL')
+if analisis_inicial:
+  st.write('ESTA ES LA PÁGINA CON EL ANÁLISIS INICIAL')
     
-  if EDA:
-   st.write('ESTA ES LA PÁGINA CON LA EDA')
+if EDA:
+  st.write('ESTA ES LA PÁGINA CON LA EDA')
     
-  if Modelos_summary:
-   st.write('ESTA ES LA PÁGINA CON LA EL RESUMEN DE LOS MODELOS')
+if Modelos_summary:
+  st.write('ESTA ES LA PÁGINA CON LA EL RESUMEN DE LOS MODELOS')
 
   
