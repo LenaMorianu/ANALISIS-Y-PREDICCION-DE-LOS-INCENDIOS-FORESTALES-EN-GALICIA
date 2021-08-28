@@ -31,11 +31,9 @@ inicio = st.sidebar.button("INICIO")
  #   if st.checkbox('Muestra los datos'):
   #      st.write(data)
          
-if inicio:
-  
 
 
-st.sidebar.subheader("Índice")
+st.sidebar.subheader('Índice')
              
   
          
