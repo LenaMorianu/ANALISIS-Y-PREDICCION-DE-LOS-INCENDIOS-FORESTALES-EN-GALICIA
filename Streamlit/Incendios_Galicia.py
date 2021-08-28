@@ -95,8 +95,6 @@ if inicio:
           st.write(data)
     
    
-# Al pulsar el boton indice
-if indice:
   x = data['superficie']
   y = data['fecha']
   p = figure(
@@ -117,4 +115,26 @@ if indice:
 
 # st.write(st.session_state['value']) - ERROR
          
-       
+  
+  
+ # Al pulsar el boton indice
+if indice: 
+  introduccion = st.sidebar.botton('Introducción')
+  analisis_inicial = st.sidebar.botton('Análisis inicial')
+  EDA = st.sidebar.botton('EDA')
+  Modelos_summary = st.sidebar.botton('Modelos summary')
+  
+  
+  if introduccion:
+    st.write('ESTA ES LA PÁGINA CON LA INTRODUCCIÓN')
+  
+  if analisis_inicial:
+    st.write('ESTA ES LA PÁGINA CON EL ANÁLISIS INICIAL')
+    
+  if EDA:
+   st.write('ESTA ES LA PÁGINA CON LA EDA')
+    
+  if Modelos_summary:
+   st.write('ESTA ES LA PÁGINA CON LA EL RESUMEN DE LOS MODELOS')
+
+  
