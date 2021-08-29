@@ -76,7 +76,7 @@ if inicio:
 
   st.subheader('Datos de incendios en Galicia')
   with st.container():
-    if st.checkbox('Muestra los datos'):
+    if st.checkbox('Muestra los datos', key='MostrarDatos):
        st.write(data)
     
 #st.dataframe(data.style.highlight_max(axis=0))
@@ -91,7 +91,7 @@ if inicio:
 
   with right_column:    
       st.subheader('Datos de incendios en Galicia')
-      if st.checkbox('Muestra los datos'):
+      if st.checkbox('Muestra los datos', key='MuestraDatos2):
           st.write(data)
     
    
