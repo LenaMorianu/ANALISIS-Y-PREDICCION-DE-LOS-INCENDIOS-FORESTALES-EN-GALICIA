@@ -52,7 +52,7 @@ datos_galicia = importar_datos()
 test_size = st.sidebar.slider(label = 'Elige el tamaño del dataset de TEST (%):',
                               min_value=0,
                               max_value=100,
-                              value=15
+                              value=15,
                               step=1)
 
 
