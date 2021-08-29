@@ -1,6 +1,6 @@
 
 
-##Análisis y predicción de incendios en Galicia
+Análisis y predicción de los incendios en Galicia
 
 1. [El dataset de análisis](https://lenamorianu.github.io/TFM/overview.html)
 2. [EDA](https://lenamorianu.github.io/TFM/features.html)
