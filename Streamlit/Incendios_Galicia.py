@@ -91,8 +91,7 @@ if inicio:
 
   with right_column:    
       st.subheader('Datos de incendios en Galicia')
-      if st.checkbox('Muestra los datos', key=MuestraDatos2):
-          st.write(data)
+      st.write(data)
     
    
   x = data['superficie']
