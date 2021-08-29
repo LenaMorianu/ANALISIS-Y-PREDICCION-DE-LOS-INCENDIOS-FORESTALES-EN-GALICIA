@@ -17,7 +17,7 @@ from bokeh.plotting import figure
 
 ####### IMAGEN
 
-imageGalicia = Image.open('MapaInicio_Galicia.jpg')
+imageGalicia = Image.open('images/MapaInicio_Galicia.jpg')
 
 st.image(imageGalicia, caption='source: https://github.com/LenaMorianu/ANALISIS-Y-PREDICCION-DE-LOS-INCENDIOS-FORESTALES-EN-GALICIA/blob/main/Streamlit/images/',
          use_column_width=True)          
