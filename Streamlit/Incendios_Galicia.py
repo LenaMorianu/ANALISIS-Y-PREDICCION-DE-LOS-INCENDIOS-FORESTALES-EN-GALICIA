@@ -17,9 +17,9 @@ st.set_page_config( page_title="Incendios en Galicia",
 
 ####### IMAGEN
 
-image = Image.open('MapaInicio_Galicia.jpg')
+image = Image.open('./images/MapaGalicia.jpg')
 
-st.image(image, use_column_width=True)          
+st.image(image, caption='Mapa Incendios Galicia', use_column_width=True)          
     
 st.title('Análisis y predicción de incendios en Galicia')
          
