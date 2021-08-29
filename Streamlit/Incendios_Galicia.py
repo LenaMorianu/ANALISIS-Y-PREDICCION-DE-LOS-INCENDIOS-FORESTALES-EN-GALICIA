@@ -17,7 +17,7 @@ st.set_page_config( page_title="Incendios en Galicia",
 
 
 
-st.title('                             Análisis y predicción de incendios en Galicia')
+st.title('Análisis y predicción de incendios en Galicia')
          
 st.write('El presente proyecto tiene como objetivo el análisis de los incendios producidos en Galicia durante el periodo 2001 - 2015, ' +
          'así como realizar predicciones de la CAUSA de incendios con las características (datos) que el usuarios desea consultar.')
@@ -97,7 +97,26 @@ def modelos():
 
 datos_galicia = importar_datos()
 
-st.write(datos_galicia.head())
+
+#Variables de predicción
+
+st.sidebar.subheader('Valores para prediccióin:')
+
+var1 = st.sidebar.number_input('Superficie', min_value=0, max_value=100, step=5)
+var2 = st.sidebar.number_input('Time_ctrl', min_value=0, max_value=100, step=5)
+var3 = st.sidebar.selectbox('Precipitación:', ['Si','No'])
+var4 = st.sidebar.number_input('Time_ext', min_value=0, max_value=100, step=5)
+var5 = st.sidebar.number_input('Sol', min_value=0, max_value=100, step=5)
+var6 = st.sidebar.number_input('Personal', min_value=0, max_value=100, step=5)
+var7 = st.sidebar.number_input('Racha', min_value=0, max_value=100, step=5)
+var8 = st.sidebar.number_input('Longitud', min_value=-10, max_value=-6, step=0.05)
+var9 = st.sidebar.number_input('Latitud', min_value=41, max_value=44, step=0.05)
+var10 = st.sidebar.number_input('Año', min_value=2001, max_value=2015, step=1)
+var11 = st.sidebar.number_input('TMAX', min_value=-30, max_value=50, step=1)
+var12 = st.sidebar.number_input('medios', min_value=0, max_value=8, step=5)
+var13 = st.sidebar.number_input('PRES_RANGE', min_value=0, max_value=15, step=1)
+
+
 
 # Preguntar por el tamaño del dataset de TEST
 test_size = st.sidebar.slider(label = 'Elige el tamaño del dataset de TEST (%):',
@@ -107,11 +126,24 @@ test_size = st.sidebar.slider(label = 'Elige el tamaño del dataset de TEST (%):
                               step=1)
 
 
-
 results, corr = modelos()
 
-st.write(corr, results)
+boton_prediccion = st.sider.button('REALIZAR PREDICCIÓN')
 
+
+
+
+
+st.sidebar.write('')
+st.sidebar.write('**AUTORES:**')
+st.sidebar.write('**Alejandra García Mosquera**')
+st.sidebar.write('**Jorge Gómez Marco**')
+st.sidebar.write('**Ana Hernández Villate**')
+st.sidebar.write('**Alex Ilundain**')
+st.sidebar.write('**Alicia María López Machado**')
+st.sidebar.write('**Lenuta Morianu**')
+st.sidebar.write('MÁSTER BIG DATA & DATA SCIENCE')
+st.sidebar.write('Madrid - Septiembre 2021')
 
 
 #################################################################
