@@ -27,6 +27,7 @@ Alicia María López Machado
 Lenuta Morianu
 
 
+Universidad Complutense de Madrid
 MÁSTER BIG DATA & DATA SCIENCE 
 
 Madrid - Septiembre 2021
