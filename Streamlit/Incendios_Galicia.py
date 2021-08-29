@@ -8,19 +8,18 @@ import numpy as np
 import bokeh
 from bokeh.plotting import figure
 
-# st.set_page_config(
-  #  page_title="Incendios en Galicia",
-    #page_icon="🧊",
-   # layout="wide",
-    #initial_sidebar_state="expanded")
+st.set_page_config( page_title="Incendios en Galicia",
+                   #page_icon="🧊",
+                   layout="wide",
+                   initial_sidebar_state="expanded")
 
 
 ####### IMAGEN
 
-#imageGalicia = Image.open('images/MapaInicio_Galicia.jpg')
+image = Image.open('images/MapaInicio_Galicia.jpg')
 
-#st.image(imageGalicia, caption='source: https://github.com/LenaMorianu/ANALISIS-Y-PREDICCION-DE-LOS-INCENDIOS-FORESTALES-EN-GALICIA/blob/main/Streamlit/images/',
-#         use_column_width=True)          
+st.image(image, caption='source: https://github.com/LenaMorianu/ANALISIS-Y-PREDICCION-DE-LOS-INCENDIOS-FORESTALES-EN-GALICIA/blob/main/Streamlit/images/',
+         use_column_width=True)          
     
 st.title('Análisis y predicción de incendios en Galicia')
          
@@ -134,4 +133,7 @@ if predicciones:
 #if introduccion:
  # st.write('ESTA ES LA PÁGINA CON LA INTRODUCCIÓN')
   
-  
+#  add_selectbox = st.sidebar.selectbox(
+ #     'Elige la variable que quieres ver:',
+  #    data.columns.values
+   #   )  
