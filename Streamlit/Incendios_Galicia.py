@@ -82,8 +82,8 @@ def modelos():
   f1 =  metrics.f1_score(y_test, y_pred, average='weighted')*100
  
   
-  from sklearn.metrics import confusion_matrix, plot_confusion_matrix
-  cm = confusion_matrix(y_test, y_pred)
+  from sklearn.metrics import multilabel_confusion_matrix, plot_confusion_matrix
+  cm = multilabel_confusion_matrix(y_test, y_pred)
   tn, fp, fn, tp = cm.ravel()
   
   
