@@ -89,8 +89,8 @@ def modelos():
   #tn, fp, fn, tp = 
   cm.ravel()
   
-  #data = [[models[i], acc, prc, rec, f1, tp, tn, fp, fn, classifier]]
-  data = [[models[i], acc, prc, rec, f1, classifier]]
+  #data = [[modelos[i], acc, prc, rec, f1, tp, tn, fp, fn, classifier]]
+  data = [[modelos[i], acc, prc, rec, f1, classifier]]
   
   #column_names = ['Modelo','Accuracy','Precision','Recall','F1','Total_Positivos','Total_Negativos','Falsos_Positivos','Falsos_Negativos','Classifier']
   column_names = ['Modelo','Accuracy','Precision','Recall','F1','Classifier']
