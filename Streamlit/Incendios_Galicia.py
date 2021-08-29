@@ -138,8 +138,11 @@ boton_prediccion = st.sidebar.button('REALIZAR PREDICCIÓN')
 
 
 
-
-
+st.sidebar.write('')
+st.sidebar.write('')
+st.sidebar.write('')
+st.sidebar.write('MÁSTER BIG DATA & DATA SCIENCE')
+st.sidebar.write('Madrid - Septiembre 2021')
 st.sidebar.write('')
 st.sidebar.write('**AUTORES:**')
 st.sidebar.write('**Alejandra García Mosquera**')
@@ -151,6 +154,66 @@ st.sidebar.write('**Lenuta Morianu**')
 st.sidebar.write('MÁSTER BIG DATA & DATA SCIENCE')
 st.sidebar.write('Madrid - Septiembre 2021')
 
+
+
+
+
+st.subheader('RESULTADOS:')
+
+if boton_prediccion:
+  values =[var1,var2,var3,var4,var5,var6,var7,var8,var9,var10,var11,var12,var13]
+  column_names = ['Superficie', 'Time_ctrl','Precipitación','Time_ext','Sol','Personal','Racha','Longitud','Latitud','Año','TMAX','Medios','PRES_RANGE']
+  
+  df = pd.DataFrame(values, column_names)
+  
+  if df[0][2] =='Si': df[0][2] = 1
+  elif df[0][2] =='No': df[0][2] = 0
+    
+  pred = [list(df[0])]
+  
+  
+  classifier_best = results['Classifier'][results['Recall']== results['Recall'].max()].values
+  classifier = classifier_best[0]
+  
+  model_best = results['Modelo'][results['Recall']== results['Recall'].max()].values
+  model = model_best[0]
+  
+  result = classifier.predict(pred)
+  prob = classifier.predict_proba(pred)
+  
+  if result == 0: st.write('CAUSA indencio: **CAUSA DESCONOCIDA**')
+  if result == 1: st.write('CAUSA indencio: **FUEGO REPRODUCIDO**')
+  if result == 2: st.write('CAUSA indencio: **INTENCIONADO**')
+  if result == 3: st.write('CAUSA indencio: **NEGLIGENCIA**')
+  if result == 4: st.write('CAUSA indencio: **RAYO**')
+
+    
+  st.write('Modeo':, model)
+  st.subheader('Métricas de evaluación:')
+  
+  st.table(results[['Modelo','Recall','Accuracy','Precision','F1']].sort_values(by='Recall', ascending=False))
+  
+  st.subheader('Matriz de correlación')
+  
+  fix,ax = plt.subplots()
+  ax = corr.plot.bar (figsize = (20,10),
+                      fontsize = 15,
+                      rot = 90,
+                      grid = True)
+  
+  st.pyplot(fig)
+  
+  
+  
+  
+  st.subheader('Distribución de categorías de CAUSA')
+  freq = data['causa'].value_counts()
+  fix,ax = plt.subplots()
+  ax = freq.plot(kind='bar',
+                 figsize=(10,5),
+                 rot = 0,
+                 grid = False)
+  st.pyplot(fig)
 
 #################################################################
 
