@@ -1,6 +1,13 @@
 
 
 
+EL presente proyecto tiene los siguientes objetivos:
+
+1. El análisis de los incendios producidos en Galicia durante el periodo 2001 - 2015
+2. Preprocesado de los datos de análisis
+3. Crear modelos de predicción utilizando técnicas de Machine Learning
+4. Crear una aplicación para realizar predicciones usando los modelos creados y con datos nuevos que el usuario pueda introducir
+5. Conclusiones
 
 
 1. [El dataset de análisis](https://lenamorianu.github.io/ANALISIS-Y-PREDICCION-DE-LOS-INCENDIOS-EN-GALICIA/overview.html)
