@@ -77,9 +77,9 @@ def modelos():
   
   from sklearn import metrics
   acc = metrics.accuracy_score(y_test, y_pred)*100
-  prc = metrics.precision_score(y_test, y_pred)*100
-  rec = metrics.recall_score(y_test, y_pred)*100
-  f1 =  metrics.f1_score(y_test, y_pred)*100
+  prc = metrics.precision_score(y_test, y_pred, average='weighted')*100
+  rec = metrics.recall_score(y_test, y_pred, average='weighted')*100
+  f1 =  metrics.f1_score(y_test, y_pred, average='weighted')*100
  
   
   from sklearn import confusion_matrix, plot_confusion_matrix
