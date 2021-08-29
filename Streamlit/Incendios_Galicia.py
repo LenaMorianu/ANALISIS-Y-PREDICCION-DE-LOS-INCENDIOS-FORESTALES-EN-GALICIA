@@ -134,7 +134,7 @@ test_size = st.sidebar.slider(label = 'Elige el tamaño del dataset de TEST (%):
 
 results, corr = modelos()
 
-boton_prediccion = st.siderbar.button('REALIZAR PREDICCIÓN')
+boton_prediccion = st.sidebar.button('REALIZAR PREDICCIÓN')
 
 
 
