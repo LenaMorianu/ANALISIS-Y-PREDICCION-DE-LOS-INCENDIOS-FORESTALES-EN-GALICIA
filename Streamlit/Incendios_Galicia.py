@@ -54,7 +54,7 @@ def modelos():
   y = df['causa']
   
   #Crear el dataset de TRAIN y TEST
-  X_train, X_test, y_train, y_test = train_test_split(X,y, test_size=x)
+  X_train, X_test, y_train, y_test = train_test_split (X, y , test_size = x, random_state = 12345, stratify =y)
   
   #Entrenamiento de modelos
   modelos=['Random Forest', 'Logistic Regression']
