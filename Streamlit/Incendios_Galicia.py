@@ -6,6 +6,7 @@ import streamlit as st
 from PIL import Image
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 import bokeh
 from bokeh.plotting import figure
 
@@ -21,6 +22,7 @@ st.set_page_config( page_title="Incendios en Galicia",
  
 # st.image(image, caption='Mapa Incendios Galicia', use_column_width=True)          
     
+
 st.title('Análisis y predicción de incendios en Galicia')
          
 st.write('El presente proyecto tiene como objetivo el análisis de los incendios producidos en Galicia durante el periodo 2001 - 2015, ' +
@@ -30,24 +32,11 @@ st.write('El presente proyecto tiene como objetivo el análisis de los incendios
          
 # datos_galicia = pd.read.csv('https://raw.githubusercontent.com/LenaMorianu/TFM/main/Galicia_definitivo.csv')
          
+# Crear los botones del menú  
 inicio = st.sidebar.button("INICIO")
-
 predicciones = st.sidebar.button("REALIZAR PREDICCIÓN")
 
          
-####### IMAGEN
-# image = Image.open('mario-1557240_640.jpg')
-
-# st.image(image, caption='source: https://pixabay.com/photos/mario-luigi-yoschi-figures-funny-1557240/',
-           # use_column_width=True)       
-   
-
-#st.subheader('Datos de incendios en Galicia')
-#with st.container():
- #   if st.checkbox('Muestra los datos'):
-  #      st.write(data)    
-    
-    
 st.write('')
 
 
@@ -114,24 +103,12 @@ if inicio:
 # st.write(st.session_state['value']) - ERROR
          
 
-# Al pulsar el botno predicciones  
+# Al pulsar el botón predicciones  
 if predicciones:
   st.sidebar.write('Introduce valores para las siguientes variables:')
 
 
 
- # Al pulsar el boton indice
-#if indice: 
-#  introduccion = st.sidebar.botton('Introducción')
-#  analisis = st.sidebar.botton('Análisis inicial')
-#  eda = st.sidebar.botton('EDA')
-#  modelos = st.sidebar.botton('Modelos summary')
+
   
   
-#if introduccion:
- # st.write('ESTA ES LA PÁGINA CON LA INTRODUCCIÓN')
-  
-#  add_selectbox = st.sidebar.selectbox(
- #     'Elige la variable que quieres ver:',
-  #    data.columns.values
-   #   )  
