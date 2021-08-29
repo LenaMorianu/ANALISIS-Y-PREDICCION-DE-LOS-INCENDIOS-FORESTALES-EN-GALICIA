@@ -16,7 +16,7 @@ st.set_page_config( page_title="Incendios en Galicia",
 
 ####### IMAGEN
 
-image = Image.open('images/MapaInicio_Galicia.jpg')
+image = Image.open('MapaInicio_Galicia.jpg')
 
 st.image(image, caption='source: https://github.com/LenaMorianu/ANALISIS-Y-PREDICCION-DE-LOS-INCENDIOS-FORESTALES-EN-GALICIA/blob/main/Streamlit/images/',
          use_column_width=True)          
