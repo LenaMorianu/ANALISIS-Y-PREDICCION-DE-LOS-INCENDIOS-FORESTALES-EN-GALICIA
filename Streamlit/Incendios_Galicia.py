@@ -137,27 +137,6 @@ results, corr = modelos()
 boton_prediccion = st.sidebar.button('REALIZAR PREDICCIÓN')
 
 
-
-st.sidebar.write('')
-st.sidebar.write('')
-st.sidebar.write('')
-st.sidebar.write('MÁSTER BIG DATA & DATA SCIENCE')
-st.sidebar.write('Madrid - Septiembre 2021')
-st.sidebar.write('')
-st.sidebar.write('**AUTORES:**')
-st.sidebar.write('**Alejandra García Mosquera**')
-st.sidebar.write('**Jorge Gómez Marco**')
-st.sidebar.write('**Ana Hernández Villate**')
-st.sidebar.write('**Alex Ilundain**')
-st.sidebar.write('**Alicia María López Machado**')
-st.sidebar.write('**Lenuta Morianu**')
-st.sidebar.write('MÁSTER BIG DATA & DATA SCIENCE')
-st.sidebar.write('Madrid - Septiembre 2021')
-
-
-
-
-
 st.subheader('RESULTADOS:')
 
 if boton_prediccion:
@@ -215,6 +194,35 @@ if boton_prediccion:
                  grid = False)
   st.pyplot(fig)
 
+  
+  
+  
+  
+st.sidebar.write('')
+st.sidebar.write('')
+st.sidebar.write('')
+st.sidebar.write('MÁSTER BIG DATA & DATA SCIENCE')
+st.sidebar.write('Madrid - Septiembre 2021')
+st.sidebar.write('')
+st.sidebar.write('**AUTORES:**')
+st.sidebar.markdown(' - **Alejandra García Mosquera**'+
+                    ' - **Jorge Gómez Marco**'+
+                    ' - **Ana Hernández Villate**'+
+                    ' - **Alex Ilundain**'+
+                    ' - **Alicia María López Machado**'+
+                    ' - **Lenuta Morianu**')
+
+st.sidebar.write('**Alejandra García Mosquera**')
+st.sidebar.write('**Jorge Gómez Marco**')
+st.sidebar.write('**Ana Hernández Villate**')
+st.sidebar.write('**Alex Ilundain**')
+st.sidebar.write('**Alicia María López Machado**')
+st.sidebar.write('**Lenuta Morianu**')
+st.sidebar.write('MÁSTER BIG DATA & DATA SCIENCE')
+st.sidebar.write('Madrid - Septiembre 2021')
+
+  
+  
 #################################################################
 
 
