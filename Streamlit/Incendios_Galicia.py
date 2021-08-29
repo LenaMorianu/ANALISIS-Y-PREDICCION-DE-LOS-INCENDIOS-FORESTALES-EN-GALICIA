@@ -59,7 +59,9 @@ def modelos():
   
   #Entrenamiento de modelos
   modelos=['Random Forest', 'Logistic Regression']
-  column_names=['Modelo','Accuracy','Precision','Recall','F1','Total_Positivos','Total_Negativos','Falsos_Positivos','Falsos_Negativos','Classifier']
+  
+  #column_names=['Modelo','Accuracy','Precision','Recall','F1','Total_Positivos','Total_Negativos','Falsos_Positivos','Falsos_Negativos','Classifier']
+  column_names=['Modelo','Accuracy','Precision','Recall','F1','Classifier']
   results =pd.DataFrame(columns=column_names)
   
   for i in range(0, len(modelos)):
@@ -84,11 +86,14 @@ def modelos():
   
   from sklearn.metrics import multilabel_confusion_matrix, plot_confusion_matrix
   cm = multilabel_confusion_matrix(y_test, y_pred)
-  tn, fp, fn, tp = cm.ravel()
+  #tn, fp, fn, tp = 
+  cm.ravel()
   
+  #data = [[models[i], acc, prc, rec, f1, tp, tn, fp, fn, classifier]]
+  data = [[models[i], acc, prc, rec, f1, classifier]]
   
-  data = [[models[i], acc, prc, rec, f1, tp, tn, fp, fn, classifier]]
-  column_names = ['Modelo','Accuracy','Precision','Recall','F1','Total_Positivos','Total_Negativos','Falsos_Positivos','Falsos_Negativos','Classifier']
+  #column_names = ['Modelo','Accuracy','Precision','Recall','F1','Total_Positivos','Total_Negativos','Falsos_Positivos','Falsos_Negativos','Classifier']
+  column_names = ['Modelo','Accuracy','Precision','Recall','F1','Classifier']
   model_results = pd.DataFrame(data=data, columns=column_names)
   results = results.append(model_results, ignore_index=True)
   
