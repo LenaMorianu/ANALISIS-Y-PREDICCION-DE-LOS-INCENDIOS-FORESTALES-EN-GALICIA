@@ -53,7 +53,7 @@ st.write('')
 
 # Al pulsar el boton inicio
 if inicio:
-  DATA_URL = 'https://raw.githubusercontent.com/LenaMorianu/TFM/main/Galicia_definitivo.csv'
+  DATA_URL = 'https://raw.githubusercontent.com/LenaMorianu/ANALISIS-Y-PREDICCION-DE-LOS-INCENDIOS-FORESTALES-EN-GALICIA/main/Galicia_definitivo.csv'
 
   DATE_COLUMN = 'fecha'
 
