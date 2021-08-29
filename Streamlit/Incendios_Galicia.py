@@ -188,7 +188,7 @@ if boton_prediccion:
   if result == 4: st.write('CAUSA indencio: **RAYO**')
 
     
-  st.write('Modeo':, model)
+  st.write('Modelo': model)
   st.subheader('Métricas de evaluación:')
   
   st.table(results[['Modelo','Recall','Accuracy','Precision','F1']].sort_values(by='Recall', ascending=False))
