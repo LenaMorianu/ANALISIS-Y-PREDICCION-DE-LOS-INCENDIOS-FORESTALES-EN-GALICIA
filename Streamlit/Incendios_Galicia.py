@@ -60,7 +60,7 @@ def modelos():
   #Entrenamiento de modelos
   modelos=['Random Forest', 'Logistic Regression']
   column_names=['Modelo','Accuracy','Precision','Recall','F1','Total_Positivos','Total_Negativos','Falsos_Positivos','Falsos_Negativos','Classifier']
-  results =pd.DataFrame(column=column_names)
+  results =pd.DataFrame(columns=column_names)
   
   for i in range(0, len(modelos)):
     
