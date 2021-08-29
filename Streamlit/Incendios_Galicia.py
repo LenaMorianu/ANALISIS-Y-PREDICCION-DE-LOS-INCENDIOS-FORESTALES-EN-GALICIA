@@ -66,7 +66,7 @@ def modelos():
     
     if i==0:
       from sklearn.ensemble import RandomForestClassifier
-      classifier = RandomForestClassifier(random_state=19, creterion='entropy', class_weight='balanced')
+      classifier = RandomForestClassifier(random_state=19, criterion='entropy', class_weight='balanced')
     
     else:
       from sklearn.linear_model import LogisticRegression
