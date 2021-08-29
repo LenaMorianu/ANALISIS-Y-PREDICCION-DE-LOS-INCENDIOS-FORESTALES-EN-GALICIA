@@ -33,7 +33,7 @@ st.write('El presente proyecto tiene como objetivo el análisis de los incendios
          
 inicio = st.sidebar.button("INICIO")
 
-predicciones = st.sidebar.button('REALIZAR PREDICCIÓN')
+predicciones = st.sidebar.button("REALIZAR PREDICCIÓN")
 
          
 ####### IMAGEN
@@ -116,7 +116,8 @@ if inicio:
 
 # st.write(st.session_state['value']) - ERROR
          
-  
+
+# Al pulsar el botno predicciones  
 if predicciones:
   st.sidebar.write('Introduce valores para las siguientes variables:')
 
