@@ -49,13 +49,49 @@ def modelos():
   #Imprimit la correlación
   corr = df.corr()['causa']
   
+  #Separar la variable target
+  X = df.drop(['causa'], axis=1)
+  y = data['causa']
+  
+  #Crear el dataset de TRAIN y TEST
+  X_train, X_test, y_train, y_test = train_test_split(X,y, test_size=x)
+  
+  #Entrenamiento de modelos
+  modelos=['Random Forest', 'Logistic Regression']
+  column_names=['Modelo','Accuracy','Precision','Recall','F1','Total_Positivos','Total_Negativos','Falsos_Positivos','Falsos_Negativos','Classifier']
+  results =pd.DataFrame(column=column_names)
+  
+  for i in range(0, len(modelos)):
+    
+    if i==0:
+      from sklearn.ensemble import RandomForestClassifier
+      classifier = RandomForestClassifier(random_state=19, creterion='entropy', class_weight='balanced')
+    
+    else:
+      from sklearn.linear_model import LogisticRegression
+      classifier = LogisticRegression(solver='sag',class_weight='balanced')
+  
+  classifier.fit(X_train, y_train)
+  y_pred = classifier.predict(X_test)
+  
+  from sklearn import metrics
+  acc = metrics.accuracy_score(y_test, y_pred)*100
+  prc = metrics.precision_score(y_test, y_pred)*100
+  rec = metrics.recall_score(y_test, y_pred)*100
+  f1 =  metrics.f1_score(y_test, y_pred)*100
+ 
+  
+  from sklearn import confusion_matrix, plot_confusion_matrix
+  cm = confusion_matrix(y_test, y_pred)
+  tn, fp, fn, tp = cm.ravel()
   
   
+  data = [[models[i], acc, prc, rec, f1, tp, tn, fp, fn, classifier]]
+  column_names = ['Modelo','Accuracy','Precision','Recall','F1','Total_Positivos','Total_Negativos','Falsos_Positivos','Falsos_Negativos','Classifier']
+  model_results = pd.DataFrame(data=data, columns=column_names)
+  results = results.append(model_results, ignore_index=True)
   
-  
-  
-
-  return corr, df.head(10)
+  return results, corr
 
 
 
@@ -72,9 +108,9 @@ test_size = st.sidebar.slider(label = 'Elige el tamaño del dataset de TEST (%):
 
 
 
-df, corr = modelos()
+results, corr = modelos()
 
-st.write(corr, df)
+st.write(corr, results)
 
 
 
