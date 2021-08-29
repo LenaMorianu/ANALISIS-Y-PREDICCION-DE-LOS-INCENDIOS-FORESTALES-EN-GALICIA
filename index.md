@@ -1,6 +1,6 @@
 
 
-Análisis y predicción de los incendios en Galicia
+
 
 
 1. [El dataset de análisis](https://lenamorianu.github.io/ANALISIS-Y-PREDICCION-DE-LOS-INCENDIOS-EN-GALICIA/overview.html)
@@ -23,6 +23,7 @@ AUTORES:
 
 
 Universidad Complutense de Madrid
+
 MÁSTER BIG DATA & DATA SCIENCE 
 
 Madrid - Septiembre 2021
