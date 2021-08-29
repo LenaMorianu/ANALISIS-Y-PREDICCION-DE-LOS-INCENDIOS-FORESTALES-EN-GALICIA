@@ -181,11 +181,11 @@ if boton_prediccion:
   result = classifier.predict(pred)
   prob = classifier.predict_proba(pred)
   
-  if result == 0: st.write('CAUSA indencio: **CAUSA DESCONOCIDA**')
-  if result == 1: st.write('CAUSA indencio: **FUEGO REPRODUCIDO**')
-  if result == 2: st.write('CAUSA indencio: **INTENCIONADO**')
-  if result == 3: st.write('CAUSA indencio: **NEGLIGENCIA**')
-  if result == 4: st.write('CAUSA indencio: **RAYO**')
+  if result == 0: st.write('CAUSA incendio: **CAUSA DESCONOCIDA**')
+  if result == 1: st.write('CAUSA incendio: **FUEGO REPRODUCIDO**')
+  if result == 2: st.write('CAUSA incendio: **INTENCIONADO**')
+  if result == 3: st.write('CAUSA incendio: **NEGLIGENCIA**')
+  if result == 4: st.write('CAUSA incendio: **RAYO**')
 
     
   st.write('Modelo:', model)
