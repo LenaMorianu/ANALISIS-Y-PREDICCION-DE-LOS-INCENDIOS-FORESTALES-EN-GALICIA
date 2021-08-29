@@ -51,7 +51,7 @@ def modelos():
   
   #Separar la variable target
   X = df.drop(['causa'], axis=1)
-  y = data['causa']
+  y = df['causa']
   
   #Crear el dataset de TRAIN y TEST
   X_train, X_test, y_train, y_test = train_test_split(X,y, test_size=x)
