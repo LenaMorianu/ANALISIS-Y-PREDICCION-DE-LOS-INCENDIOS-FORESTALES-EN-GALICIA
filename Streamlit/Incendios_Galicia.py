@@ -15,10 +15,17 @@ from bokeh.plotting import figure
     #initial_sidebar_state="expanded")
 
 
+####### IMAGEN
+
+imageGalicia = Image.open('MapaInicio_Galicia.jpg')
+
+st.image(imageGalicia, caption='source: https://github.com/LenaMorianu/ANALISIS-Y-PREDICCION-DE-LOS-INCENDIOS-FORESTALES-EN-GALICIA/blob/main/Streamlit/images/',
+         use_column_width=True)          
+    
 st.title('Análisis y predicción de incendios en Galicia')
          
 st.write('El presente proyecto tiene como objetivo el análisis de los incendios producidos en Galicia durante el periodo 2001 - 2015, ' +
-         'así como realizar predicciones de la CAUSA de incendios con las características (datos) que desea consultar.')
+         'así como realizar predicciones de la CAUSA de incendios con las características (datos) que el usuarios desea consultar.')
          
          
          
@@ -26,14 +33,8 @@ st.write('El presente proyecto tiene como objetivo el análisis de los incendios
          
 inicio = st.sidebar.button("INICIO")
 
-indice = st.sidebar.button('Indice')
-            
-  
-         
-st.sidebar.subheader("REALIZAR PREDICCIÓN")
-st.sidebar.write('Introduce valores para las siguientes variables:')
+predicciones = st.sidebar.button('REALIZAR PREDICCIÓN')
 
-              
          
 ####### IMAGEN
 # image = Image.open('mario-1557240_640.jpg')
@@ -116,25 +117,20 @@ if inicio:
 # st.write(st.session_state['value']) - ERROR
          
   
-  
- # Al pulsar el boton indice
-if indice: 
-  introduccion = st.sidebar.botton('Introducción')
-  analisis = st.sidebar.botton('Análisis inicial')
-  eda = st.sidebar.botton('EDA')
-  modelos = st.sidebar.botton('Modelos summary')
-  
-  
-if introduccion:
-  st.write('ESTA ES LA PÁGINA CON LA INTRODUCCIÓN')
-  
-if analisis:
-  st.write('ESTA ES LA PÁGINA CON EL ANÁLISIS INICIAL')
-    
-if eda:
-  st.write('ESTA ES LA PÁGINA CON LA EDA')
-    
-if modelos:
-  st.write('ESTA ES LA PÁGINA CON LA EL RESUMEN DE LOS MODELOS')
+if predicciones:
+  st.sidebar.write('Introduce valores para las siguientes variables:')
 
+
+
+ # Al pulsar el boton indice
+#if indice: 
+#  introduccion = st.sidebar.botton('Introducción')
+#  analisis = st.sidebar.botton('Análisis inicial')
+#  eda = st.sidebar.botton('EDA')
+#  modelos = st.sidebar.botton('Modelos summary')
+  
+  
+#if introduccion:
+ # st.write('ESTA ES LA PÁGINA CON LA INTRODUCCIÓN')
+  
   
