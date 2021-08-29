@@ -205,12 +205,12 @@ st.sidebar.write('MÁSTER BIG DATA & DATA SCIENCE')
 st.sidebar.write('Madrid - Septiembre 2021')
 st.sidebar.write('')
 st.sidebar.write('**AUTORES:**')
-st.sidebar.markdown(' - **Alejandra García Mosquera**'+
-                    ' - **Jorge Gómez Marco**'+
-                    ' - **Ana Hernández Villate**'+
-                    ' - **Alex Ilundain**'+
-                    ' - **Alicia María López Machado**'+
-                    ' - **Lenuta Morianu**')
+st.sidebar.markdown(' - **Alejandra García Mosquera**')
+st.sidebar.markdown(' - **Jorge Gómez Marco**')
+st.sidebar.markdown(' - **Ana Hernández Villate**')
+st.sidebar.markdown(' - **Alex Ilundain**')
+st.sidebar.markdown(' - **Alicia María López Machado**')
+st.sidebar.markdown(' - **Lenuta Morianu**')
 
 st.sidebar.write('**Alejandra García Mosquera**')
 st.sidebar.write('**Jorge Gómez Marco**')
