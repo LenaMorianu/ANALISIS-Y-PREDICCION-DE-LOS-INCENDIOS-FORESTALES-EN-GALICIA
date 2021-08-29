@@ -70,6 +70,8 @@ test_size = st.sidebar.slider(label = 'Elige el tamaño del dataset de TEST (%):
 
 corr = modelos()
 
+st.write(corr)
+
 
 
 #################################################################
