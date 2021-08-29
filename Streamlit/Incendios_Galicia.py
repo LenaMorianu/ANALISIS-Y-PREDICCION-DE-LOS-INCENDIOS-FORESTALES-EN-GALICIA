@@ -17,7 +17,7 @@ st.set_page_config( page_title="Incendios en Galicia",
 
 ####### IMAGEN
 
-image = Image.open('./images/MapaGalicia.jpg')
+image = Image.open('./images/IMG1.jpg')
 
 st.image(image, caption='Mapa Incendios Galicia', use_column_width=True)          
     
