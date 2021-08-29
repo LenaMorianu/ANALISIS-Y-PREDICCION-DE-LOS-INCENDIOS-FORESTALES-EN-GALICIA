@@ -14,17 +14,12 @@ Análisis y predicción de los incendios en Galicia
 
 AUTORES:
 
-Alejandra García Mosquera
-
-Jorge Gómez Marco
-
-Ana Hernández Villate
-
-Alex Ilundain
-
-Alicia María López Machado
-
-Lenuta Morianu
+- Alejandra García Mosquera
+- Jorge Gómez Marco
+- Ana Hernández Villate
+- Alex Ilundain
+- Alicia María López Machado
+- Lenuta Morianu
 
 
 Universidad Complutense de Madrid
