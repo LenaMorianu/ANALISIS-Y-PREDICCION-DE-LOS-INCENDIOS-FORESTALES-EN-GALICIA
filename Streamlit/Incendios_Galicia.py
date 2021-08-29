@@ -69,17 +69,16 @@ if inicio:
   data_load_state = st.text('Loading data...')
   data = load_data(100)
 
-  add_selectbox = st.sidebar.selectbox(
-      'Elige la variable que quieres ver:',
-      data.columns.values
-      )
+  #add_selectbox = st.sidebar.selectbox(
+   #   'Elige la variable que quieres ver:',
+   #   data.columns.values
+   #   )
 
   st.subheader('Datos de incendios en Galicia')
   with st.container():
     if st.checkbox('Muestra los datos'):
        st.write(data)
     
-#st.dataframe(data.style.highlight_max(axis=0))
 
   left_column, right_column = st.columns(2)
 
