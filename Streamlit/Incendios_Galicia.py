@@ -3,6 +3,7 @@
 
 
 import streamlit as st
+from PIL import Image
 import pandas as pd
 import numpy as np
 import bokeh
@@ -16,9 +17,9 @@ st.set_page_config( page_title="Incendios en Galicia",
 
 ####### IMAGEN
 
-image = Image.open('MapaInicio_Galicia.jpg')
+#image = Image.open('MapaInicio_Galicia.jpg')
 
-st.image(image, caption='source: https://github.com/LenaMorianu/ANALISIS-Y-PREDICCION-DE-LOS-INCENDIOS-FORESTALES-EN-GALICIA/blob/main/Streamlit/images/',
+# st.image(image, caption='source: https://github.com/LenaMorianu/ANALISIS-Y-PREDICCION-DE-LOS-INCENDIOS-FORESTALES-EN-GALICIA/blob/main/Streamlit/images/',
          use_column_width=True)          
     
 st.title('Análisis y predicción de incendios en Galicia')
