@@ -25,8 +25,6 @@ st.write('El presente proyecto tiene como objetivo el análisis de los incendios
 
   
 
-
-
 # Importar el dataset
 def importar_datos():
   url = 'https://raw.githubusercontent.com/TFM123456/Big_Data_and_Data_Science_UCM/main/datos_galicia_limpio.csv'
@@ -48,10 +46,16 @@ def modelos():
   df.causa.replace(('causa desconocida','fuego reproducido','intencionado','negligencia','rayo'),(0,1,2,3,4), inplace=True)
   
   
-  #Dibujar el mapa de correlación
+  #Imprimit la correlación
   corr = df.corr()['causa']
+  
+  
+  
+  
+  
+  
 
-  return corr
+  return corr, df.head(10)
 
 
 
@@ -68,9 +72,9 @@ test_size = st.sidebar.slider(label = 'Elige el tamaño del dataset de TEST (%):
 
 
 
-corr = modelos()
+df, corr = modelos()
 
-st.write(corr)
+st.write(corr, df)
 
 
 
