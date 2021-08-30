@@ -199,8 +199,8 @@ if boton_prediccion:
   
 st.sidebar.markdown('__________________________________________________________________________')  
 
-image = Image.open('./images/IMG2.png')
-st.image(image, caption='UCM')          
+#image = Image.open('./images/IMG2.png')
+#st.image(image, caption='UCM')          
     
 st.sidebar.write('')
 st.sidebar.write('Universidad Complutense de Madrid')
