@@ -198,7 +198,10 @@ if boton_prediccion:
   
   
 st.sidebar.markdown('__________________________________________________________________________')  
-st.sidebar.write('')
+
+image = Image.open('./images/IMG2.png')
+st.image(image, caption='UCM')          
+    
 st.sidebar.write('')
 st.sidebar.write('Universidad Complutense de Madrid')
 st.sidebar.write('MÁSTER BIG DATA & DATA SCIENCE')
