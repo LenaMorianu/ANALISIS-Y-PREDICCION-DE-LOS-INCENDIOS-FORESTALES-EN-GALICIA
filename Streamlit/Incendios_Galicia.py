@@ -197,13 +197,13 @@ if boton_prediccion:
   
   
   
-  
+st.sidebar.markdown('__________________________________________________________________________')  
 st.sidebar.write('')
 st.sidebar.write('')
-st.sidebar.write('')
+st.sidebar.write('Universidad Complutense de Madrid')
 st.sidebar.write('MÁSTER BIG DATA & DATA SCIENCE')
 st.sidebar.write('Madrid - Septiembre 2021')
-st.sidebar.write('')
+st.sidebar.write('______________________________________________________________________')
 st.sidebar.write('**AUTORES:**')
 st.sidebar.markdown(' - Alejandra García Mosquera')
 st.sidebar.markdown(' - Jorge Gómez Marco')
