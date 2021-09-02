@@ -97,5 +97,5 @@ y_proba.columns = y_proba.columns.map({0:'Intencionado',
                                        3:'Fuego_reproducido',
                                        4:'Rayo'}).astype(str)
 
- st.table(y_proba)
+st.table(y_proba)
 
