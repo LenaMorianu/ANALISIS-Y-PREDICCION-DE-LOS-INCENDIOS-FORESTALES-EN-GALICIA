@@ -97,5 +97,7 @@ y_proba.columns = y_proba.columns.map({0:'Intencionado',
                                        3:'Fuego_reproducido',
                                        4:'Rayo'}).astype(str)
 
-st.table(y_proba)
+st.write('La probabilidad de cada observación de pertenecer a las clases de la variable target CAUSA':)
+st.werite('')
+st.table(y_proba(head))
 
