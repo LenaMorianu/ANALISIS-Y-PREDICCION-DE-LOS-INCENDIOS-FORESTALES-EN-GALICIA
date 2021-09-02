@@ -75,7 +75,7 @@ modelo = RandomForestClassifier(bootstrap = True,
                                 n_estimators=150,
                                 class_weight='balanced').fit(X_train, y_train)
 
-st.write("El SCORING:", modelo.score(X_test, y_test))
+st.write("El TEST SCORING: {0:.2f} %".format(100 * modelo.score(X_test, y_test)))
 
 
  
