@@ -96,5 +96,5 @@ y_proba.columns = y_proba.columns.map({0:'Intencionado',
 
 st.write('La probabilidad de cada observación de pertenecer a las clases de la variable target CAUSA:')
 st.write('')
-st.table(y_proba(head()))
+st.table(y_proba(head(10)))
 
