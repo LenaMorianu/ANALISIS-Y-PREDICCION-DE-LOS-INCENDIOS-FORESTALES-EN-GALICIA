@@ -25,12 +25,17 @@ st.write('El presente proyecto tiene como objetivo el análisis de los incendios
 
 url = 'https://raw.githubusercontent.com/LenaMorianu/ANALISIS-Y-PREDICCION-DE-LOS-INCENDIOS-FORESTALES-EN-GALICIA/main/Streamlit/dataset_modelo.csv'
 df = pd.read_csv(url, encoding='ISO-8859-1')
+
+df.drop(['Unnamed: 0'], axis=1, inplace=True)
     
 st.write('')
 st.write('')
 st.write('')
 st.write('El dataset de análisis')
-st.write('********************************************************************************')
+st.write('')
 st.table(df.head())  
+
+
+
  
 
