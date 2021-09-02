@@ -52,7 +52,7 @@ var11 = st.sidebar.number_input('Temperatura MEDIA', min_value=-30.00, max_value
 var12 = st.sidebar.number_input('Medios', min_value=0, max_value=50, step=5)
 #var13 = st.sidebar.number_input('PRES_RANGE', min_value=0.00, max_value=15.00, step=1.00)  
   
- st.sidebar.markdown('__________________________________________________________________________')  
+st.sidebar.markdown('__________________________________________________________________________')  
 
 #image = Image.open('./images/IMG2.png')
 #st.image(image, caption='UCM')          
