@@ -76,7 +76,7 @@ modelo = RandomForestClassifier(bootstrap = True,
                                 class_weight='balanced').fit(X_train, y_train)
 
 st.write("El SCORING:")
-print(modelo.score(X_test, y_test))
+st.write(print(modelo.score(X_test, y_test)))
 
 
  
