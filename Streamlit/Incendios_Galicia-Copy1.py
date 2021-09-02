@@ -83,9 +83,6 @@ st.write("El TEST SCORING: {0:.2f} %".format(100 * modelo.score(X_test, y_test))
 st.write('')
 st.write('')
 st.write('')
-st.write('')
-st.write('')
-
 
 
 #st.table(classification_report(y_test, y_pred))
@@ -99,5 +96,5 @@ y_proba.columns = y_proba.columns.map({0:'Intencionado',
 
 st.write('La probabilidad de cada observación de pertenecer a las clases de la variable target CAUSA':)
 st.write('')
-st.table(y_proba(head))
+st.table(y_proba(head()))
 
