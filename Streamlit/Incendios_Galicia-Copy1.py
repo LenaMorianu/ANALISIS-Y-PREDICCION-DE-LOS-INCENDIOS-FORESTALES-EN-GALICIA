@@ -77,6 +77,9 @@ modelo = RandomForestClassifier(bootstrap = True,
 
 st.write("El TEST SCORING: {0:.2f} %".format(100 * modelo.score(X_test, y_test)))
 
+plot_confusion_matrix(modelo, X_test, y_test, normalize='true')
+st.plt.show()  
+
 
  
 
