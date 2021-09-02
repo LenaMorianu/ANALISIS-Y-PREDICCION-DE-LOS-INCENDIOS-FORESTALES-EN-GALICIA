@@ -73,7 +73,16 @@ X_train, X_test, y_train, y_test = train_test_split(df.drop(['Causa'], axis = 1)
 with open(pkl_filename, 'rb') as file:
     pickle_model = pickle.load(file)
     
+    
+# Calcular las métricas del modelo
+score = pickle_model.score(X_test, y_test)
+print("El SCORING del modelo : {0:.2f} %".format(100 * score))
 
+
+
+
+# Predecir la CAUSA con los datos del usuario
+#Ypredict = pickle_model.predict(X_test)   
 
 
  
