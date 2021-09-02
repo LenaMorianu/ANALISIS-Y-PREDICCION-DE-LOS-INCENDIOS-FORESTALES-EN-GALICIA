@@ -68,21 +68,6 @@ X_train, X_test, y_train, y_test = train_test_split(df.drop(['Causa'], axis = 1)
                                                     stratify = df['Causa'])
 
 
-# Cargar el fichero con el modelo creado/guardado
-
-"""with open(pkl_filename, 'rb') as file:
-    pickle_model = pickle.load(file)
-    
-    
-# Calcular las métricas del modelo
-score = pickle_model.score(X_test, y_test)
-print("El SCORING del modelo : {0:.2f} %".format(100 * score))
-
-
-
-
-# Predecir la CAUSA con los datos del usuario
-#Ypredict = pickle_model.predict(X_test) """
 
 modelo = RandomForestClassifier(bootstrap = True, 
                                 criterion= 'entropy', 
@@ -91,7 +76,7 @@ modelo = RandomForestClassifier(bootstrap = True,
                                 class_weight='balanced').fit(X_train, y_train)
 
 st.write("El SCORING:")
-modelo.score(X_test, y_test)
+print(modelo.score(X_test, y_test))
 
 
  
