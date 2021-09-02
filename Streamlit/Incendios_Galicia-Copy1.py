@@ -77,7 +77,7 @@ modelo = RandomForestClassifier(bootstrap = True,
 
 st.write("El TEST SCORING: {0:.2f} %".format(100 * modelo.score(X_test, y_test)))
 
-st.table(plot_confusion_matrix(modelo, X_test, y_test, normalize='true'))
+#st.table(plot_confusion_matrix(modelo, X_test, y_test, normalize='true'))
 
 
 st.write('')
@@ -87,7 +87,15 @@ st.write('')
 st.write('')
 
 
-st.table(classification_report(y_test, y_pred))
 
- 
+#st.table(classification_report(y_test, y_pred))
+
+y_proba = pd.DataFrame(modelo.predict_proba(X_test))
+y_proba.columns = y_proba.columns.map({0:'Intencionado',
+                                       1:'Causa_desconocida',
+                                       2:'Negligencia',
+                                       3:'Fuego_reproducido',
+                                       4:'Rayo'}).astype(str)
+
+ st.table(y_proba)
 
